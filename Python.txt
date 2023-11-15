@@ -30,6 +30,10 @@ Deployment: In production, all checks can be disabled using the function contrac
 executed
 @deal.inv->Invariant – condition that can be relied upon to be true during execution of a program.
 
+------------------------------------------
+ from python_ta.contracts import check_all_contracts
+ check_all_contracts()
+
 
 Documentation:
 https://contracts.readthedocs.io/en/latest/api.html 
