@@ -20,3 +20,6 @@ def my_function(a, b):
     """
     ...
 Deployment: In production, all checks can be disabled using the function contracts.disable_all(), so the performance hit is 0.
+
+Documentation:
+https://contracts.readthedocs.io/en/latest/api.html 
