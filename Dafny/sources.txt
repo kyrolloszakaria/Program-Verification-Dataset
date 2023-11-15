@@ -1,0 +1,20 @@
+1. from dafny main repo: https://github.com/dafny-lang/dafny/tree/master/Source/IntegrationTests
+2. lightening verifier repo: https://github.com/danyangz/lightning/blob/b969467e1bd79fcedabdc4e30fd86d69eb7025b6/verifier/undo_log.dfy 
+3. vetri-titan: https://github.com/secure-foundations/veri-titan/tree/1c0e64fd6728b20a0e123c4f77d925436a6f32c5/script/old/dfy_model 
+4. pregel algorithms: https://github.com/fmlab-iis/Pregel/tree/1c029a151cfcfdd400c4c1a8a7ae634bf1988e58/notes
+5. basic examples: https://github.com/stqam/dafny/tree/76b9858a7e5fc3442cb745dd707385af285f8ca7 
+6. NFS system verification: https://github.com/mit-pdos/daisy-nfsd/tree/98434db21451b76c700dcf5783b2bca00a63c132/src/fs
+7. Advanced examples: https://github.com/wilcoxjay/notes
+8. Course materials: https://github.com/RU-Automated-Reasoning-Group/CS515/tree/c924d6ce1be00eac54d2dbd6c2f78f30dabe3c76/Dafny
+9. mathematical objects verification: https://github.com/tchajed/dafny-syntax-tutorial/tree/0e8a97b6b5be66d5eb05f125b13e0ad0d71ba57b/src 
+10. verified algorithms: https://github.com/Nangos/verified-algorithms/tree/f782876dce9c5a174071d39b847e73c822dc1fb1/dafny 
+
+Total files are: 1381 (The numbers are approximates due to readme files and so)
+Classify the codes into:
+
+A. Oversimplified: 5 (24)
+B. Simple but descent: 4,7, 8, 9, 10 (185)
+C. Overcomplicated: 1,2,3, 6 (1172)
+
+
+search prompt: language:Dafny requires ensures invariant decreases assert assume
