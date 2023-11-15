@@ -25,6 +25,24 @@ scores = {}
 def get_color_score(color):
     return scores[color]
 
+@deal.pre(lambda *args: all(arg > 0 for arg in args))
+def sum_positive(*args):
+    return sum(args)
+sum_positive(1, 2, 3, 4)
+sum_positive(1, 2, -3, 4)
+
+@deal.post(lambda x: x > 0)
+def always_positive_sum(*args):
+    return sum(args)
+always_positive_sum(2, -3, 4)#3
+always_positive_sum(2, -3, -4) # PostContractError:
+
+@deal.ensure(lambda x, result: x != result)
+def double(x):
+    return x * 2
+double(2)# 4
+double(0) # PostContractError: expected x != result (where result=0, x=0)
+
 @contract(x='int,>=0',returns='int,>=0')
 def perfect_sqrt(x):
     retval = sqrt(x)
