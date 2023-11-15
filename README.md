@@ -1,7 +1,7 @@
 # Program-Verification-Dataset
-### This is a repo containing training data for LLM to be trained on program verification in Dafny and Python
+This is a repo containing training data for LLM to be trained on program verification in Dafny and Python
 
-# Dafny dataset
+## Dafny dataset
 search prompt: language:Dafny requires ensures invariant decreases assert assume
 search results: https://github.com/search?q=language%3ADafny+requires+ensures+invariant+decreases+assert+assume&type=code&p=1
 search progress: finished page 1 out of 5
