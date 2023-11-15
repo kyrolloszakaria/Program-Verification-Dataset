@@ -1,0 +1,15 @@
+{
+  "name": "dafny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "foo": "dafny /compile:4 /compileTarget:js Foo.dfy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^9.0.1"
+  }
+}
