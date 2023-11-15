@@ -1,0 +1,8 @@
+keywords for preconditions:
+requires assume ghost
+
+keywords for postcondition:
+ensures assert
+
+keywords for loopinvariants:
+decreases invariant variant
