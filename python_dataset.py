@@ -43,6 +43,14 @@ def double(x):
 double(2)# 4
 double(0) # PostContractError: expected x != result (where result=0, x=0)
 
+def divide(x: int, y: int) -> int:
+    return x // y
+if __name__ == '__main__':
+    from python_ta.contracts import check_all_contracts
+    check_all_contracts()
+    divide(10, 0)  # Preconditions on y violated
+
+
 @contract(x='int,>=0',returns='int,>=0')
 def perfect_sqrt(x):
     retval = sqrt(x)
