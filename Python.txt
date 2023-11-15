@@ -21,5 +21,16 @@ def my_function(a, b):
     ...
 Deployment: In production, all checks can be disabled using the function contracts.disable_all(), so the performance hit is 0.
 
+-----------------------------------
+
+@deal
+@deal.pre -> precondition
+@deal.post->postcondition
+@deal.ensure->Ensure is a postcondition that accepts not only result, but also function arguments. Must be true after function 
+executed
+@deal.inv->Invariant – condition that can be relied upon to be true during execution of a program.
+
+
 Documentation:
 https://contracts.readthedocs.io/en/latest/api.html 
+@deal: https://github.com/life4/deal/blob/master/docs/basic/values.md 
